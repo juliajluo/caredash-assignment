@@ -1,0 +1,1 @@
+jQuery(document).ready(function(e){var a=e("#nav-toggle"),o=e("#nav-menu");a.click(function(){e(this).toggleClass("is-active"),o.toggleClass("is-active")}),e(".owl-carousel").owlCarousel({loop:!0,nav:!1,autoplay:!0,autoplayTimeout:3e3,smartSpeed:1500,responsive:{0:{items:1},600:{items:1},1e3:{items:1}}})});
