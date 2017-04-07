@@ -2,20 +2,24 @@
 title: Welcome to Bakery
 ---
 
-.owl-carousel.owl-theme
-  div
-    = image_tag "slideshow/buttery-croissants.jpg"
-  div
-    = image_tag "slideshow/chocolate-sponge-cakes.jpg"
-  div
-    = image_tag "slideshow/crusty-french-rolls.jpg"
-  div
-    = image_tag "slideshow/ham-and-cheese-panini.jpg"
-  div
-    = image_tag "slideshow/nut-brownies.jpg"
-  div
-    = image_tag "slideshow/shortbread-biscuits.jpg"
-
+.section
+  .columns
+    .column.is-two-thirds
+      .owl-carousel.owl-theme
+        div
+          = image_tag "slideshow/buttery-croissants.jpg"
+        div
+          = image_tag "slideshow/chocolate-sponge-cakes.jpg"
+        div
+          = image_tag "slideshow/crusty-french-rolls.jpg"
+        div
+          = image_tag "slideshow/ham-and-cheese-panini.jpg"
+        div
+          = image_tag "slideshow/nut-brownies.jpg"
+        div
+          = image_tag "slideshow/shortbread-biscuits.jpg"
+    .column
+      p content
 .section
   .container
     .columns
@@ -28,7 +32,7 @@ title: Welcome to Bakery
           p We are destination for delicious cakes, donuts, coffee, cookies — and of course our legendary cupcakes.
           p Everything is made fresh on the premises with only the finest ingredients, like real butter and free-range eggs.
 
-          p 
+          p
             strong Our Cupcakes
 
           p Rich, flaky, buttery &amp; incredibly delicious, our Cupcakes are made with a special 3-step process that's been handed down from generation to generation.
@@ -72,25 +76,22 @@ title: Welcome to Bakery
         .content
           h2.title.has-text-centered Testimonials
           = image_tag 'homepage/bakery-testimonials.jpg', alt: 'Testimonials', class: 'center-block'
-          p 
-            | Thank you so much for such a beautiful wedding cake! It was better than we hoped. We and our guests enjoyed it very much. 
-            strong Jenny &amp; George 
+          p
+            | Thank you so much for such a beautiful wedding cake! It was better than we hoped. We and our guests enjoyed it very much.
+            strong Jenny &amp; George
           hr.is-marginless
-          p 
-            | Wedding was absolutely perfect. People were raving about the bakery we didn't have a single thing left. They even ate the giant cannoli shell! 
+          p
+            | Wedding was absolutely perfect. People were raving about the bakery we didn't have a single thing left. They even ate the giant cannoli shell!
             strong Tracy &amp; Mick
           hr.is-marginless
-          p 
-            | I just love your fruit cake! It is so nice to have some healthier alternatives during the Christmas Season. 
+          p
+            | I just love your fruit cake! It is so nice to have some healthier alternatives during the Christmas Season.
             strong Tim Mighton
           hr.is-marginless
-          p 
-            | All of the bakery I've had were very delicious and decorated beautifully! 
+          p
+            | All of the bakery I've had were very delicious and decorated beautifully!
             strong Donna Parnell
           hr.is-marginless
-          p 
-            | Best cake I've ever had, hands down... The size of the cakes can feed a small village, wonderful prices! 
+          p
+            | Best cake I've ever had, hands down... The size of the cakes can feed a small village, wonderful prices!
             strong Reggie Mitchell
-
-
-            
