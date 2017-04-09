@@ -7,93 +7,56 @@ title: Welcome to Bakery
     .column.is-two-thirds
       .owl-carousel.owl-theme
         div
-          = image_tag "slideshow/buttery-croissants.jpg"
+          = image_tag "slideshow/claimprofile.png"
         div
-          = image_tag "slideshow/chocolate-sponge-cakes.jpg"
-        div
-          = image_tag "slideshow/crusty-french-rolls.jpg"
-        div
-          = image_tag "slideshow/ham-and-cheese-panini.jpg"
-        div
-          = image_tag "slideshow/nut-brownies.jpg"
-        div
-          = image_tag "slideshow/shortbread-biscuits.jpg"
-    .column
-      p form goes here
+          = image_tag "slideshow/caredashstatement.png"
 
+
+    .column
+      .box
+        h2.title Sign up to edit your provider profile
+        = form_tag 'https://getsimpleform.com/messages?form_api_token=8a1414a224e622757559d5f523ebf0e8', :method => 'POST' do
+          - field_set_tag do
+            = label_tag :first_name, class: 'label'
+            p.control = text_field_tag :name, name: "name", id: "First Name", placeholder: "Your first name", autofocus: true, required: true, class: 'input'
+            = label_tag :last_name, class: 'label'
+              p.control = text_field_tag :last_name, name: "name", id: "Last Name", placeholder: "Your last name", autofocus: true, required: true, class: 'input'
+            = label_tag :email, class: 'label'
+            p.control = email_field_tag :email, name: "email", id: "email", placeholder: "Your email", required: true, class: 'input'
+            = label_tag :password, class: 'label'
+              p.control = text_field_tag :password, name: "password", id: "password", placeholder: "At least 6 letters", autofocus: true, required: true, class: 'input'
+            = label_tag :confirm_password, class: 'label'
+              p.control = text_field_tag :password, name: "password", id: "password", placeholder: "Re-enter password", autofocus: true, required: true, class: 'input'
+            p &nbsp;
+            button.control.is-pulled-left.button.is-outlined type="submit"
+              | Sign Up
+            button.control.is-pulled-left.button.is-outlined type="submit"
+              | Log In
+            p   &nbsp;
 
 .section
   .container
     .columns
-      .column.has-text-centered
+      .column
         .content
-          h2.title Welcome
-          = image_tag 'homepage/bakery-welcome.jpg', alt: 'Bakery Welcome'
-          p We are a family-owned business serving your favorite bakery products in heart of Dublin.
+          h2.title.has-text-centered Update information
+          = image_tag 'doctorpatient.jpg', alt: 'Bakery Welcome'
 
-          p We are destination for delicious cakes, donuts, coffee, cookies — and of course our legendary cupcakes.
-          p Everything is made fresh on the premises with only the finest ingredients, like real butter and free-range eggs.
+          p Update your information to help patients find your practice and schedule appointments
+          p Help yourself by making sure that our readers are accessing te correct information about you. We allow you full input on entering your information and your scheduling system.
 
-          p
-            strong Our Cupcakes
-
-          p Rich, flaky, buttery &amp; incredibly delicious, our Cupcakes are made with a special 3-step process that's been handed down from generation to generation.
-
-          p
-            strong NO CUTTING CORNERS HERE!
-
-      .column.has-text-centered
-        .content
-          h2.title Opening times
-          = image_tag 'homepage/bakery-opening-times.jpg', alt: 'Opening times'
-
-          table.table
-            tbody
-              tr
-                td Monday
-                td 7.00am - 6.30pm
-              tr
-                td Tuesday
-                td 7.00am - 6.30pm
-              tr
-                td Wednesday
-                td 7.00am - 6.30pm
-              tr
-                td Thursday
-                td 7.00am - 6.30pm
-              tr
-                td Friday
-                td 7.00am - 6.30pm
-              tr
-                td Saturday
-                td 8.00am - 4.30pm
-              tr
-                td Sunday
-                td 9.00am - 4.30pm
-
-          p
-            small 9.00am - 4.30pm on Christmas Day &amp; St. Stephen's Day
 
       .column
         .content
-          h2.title.has-text-centered Testimonials
-          = image_tag 'homepage/bakery-testimonials.jpg', alt: 'Testimonials', class: 'center-block'
-          p
-            | Thank you so much for such a beautiful wedding cake! It was better than we hoped. We and our guests enjoyed it very much.
-            strong Jenny &amp; George
-          hr.is-marginless
-          p
-            | Wedding was absolutely perfect. People were raving about the bakery we didn't have a single thing left. They even ate the giant cannoli shell!
-            strong Tracy &amp; Mick
-          hr.is-marginless
-          p
-            | I just love your fruit cake! It is so nice to have some healthier alternatives during the Christmas Season.
-            strong Tim Mighton
-          hr.is-marginless
-          p
-            | All of the bakery I've had were very delicious and decorated beautifully!
-            strong Donna Parnell
-          hr.is-marginless
-          p
-            | Best cake I've ever had, hands down... The size of the cakes can feed a small village, wonderful prices!
-            strong Reggie Mitchell
+          h2.title.has-text-centered Respond to reviews
+          = image_tag 'phonescreen.jpg', alt: 'Testimonials', class: 'center-block'
+          p Sometimes there are misunderstandings with reviews that get left for your practice. Responding to reviews shows dedication as well as works out any misunderstandings.
+
+      .column
+        .content
+          h2.title.has-text-centered Receive priority placement
+          = image_tag 'scope.jpg', alt: 'Opening times'
+
+          p By signing up you will receive priority placement in CareDash searches for having an updated profile.
+
+          p Email CareDash for more information about how priority placement in searches work.

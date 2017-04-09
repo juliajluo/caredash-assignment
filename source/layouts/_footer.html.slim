@@ -1,7 +1,37 @@
 hr.is-marginless
 footer
   .container.is-fluid
-    br
-    p 
-      = link_to 'Status', 'http://statusbakery.josefzacek.com/', class: 'is-pulled-left',  target: 'blank', title: 'Status page'
-      = link_to 'Handcoded by josefzacek.com', 'http://josefzacek.com', class: 'is-pulled-right', target: 'blank', title: 'josefzacek.com'
+    .footercustom
+      .columns
+          .column.is-2
+            .content
+              strong CareDash
+              br
+              | Home
+              br
+              | About
+              br
+              | Contact
+              br
+              | Write a Review
+
+          .column.is-2
+            .content
+              strong Specialists
+              br
+              | Primary Care
+              br
+              | Pediatrician
+              br
+              | Optometrist
+              br
+              | Dentist
+
+          .column.is-4
+            .content
+              strong Follow us
+              br
+                = image_tag "images/Facebook.png"
+                = image_tag "images/Twitter.png"
+                = image_tag "Instagram.png"
+                = image_tag "Pinterest.png"

@@ -8,6 +8,14 @@ jQuery(document).ready(function ($) {
     $menu.toggleClass('is-active');
   });
 
+  // var $toggle2 = $('#dropdown');
+  // // var $menu = $('#nav-menu');
+  //
+  $('#dropdown').click(function() {
+    $('#dropdown_content').toggleClass('is-active');
+  });
+
+
   $('.owl-carousel').owlCarousel({
     loop:true,
     nav:false,
@@ -26,5 +34,5 @@ jQuery(document).ready(function ($) {
         }
     }
   });
- 
+
 });

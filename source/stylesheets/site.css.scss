@@ -4,9 +4,9 @@ html {
   background-color: #ffffff;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Kaushan Script', cursive;
-}
+// h1, h2, h3, h4, h5, h6 {
+//   font-family: 'Kaushan Script', cursive;
+// }
 
 .center-block {
   display:block;
@@ -59,4 +59,29 @@ footer a {
     height: 380px;
     z-index: 0;
   }
+}
+
+//custom
+
+#dropdown_content {
+  box-shadow: 0 0 8px #777;
+  display: none;
+  left: 0;
+  position: relative;
+  // top: 100%;
+  z-index: 1;
+}
+
+#dropdown_content.is-active {
+  display: block;
+  // z-index: 3;
+
+}
+
+#dropdown{
+  padding-top: 10px;
+}
+
+.footercustom{
+  padding:25px;
 }

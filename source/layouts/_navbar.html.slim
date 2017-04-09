@@ -2,10 +2,8 @@
   nav.nav.
     .nav-left
       = link_to '/index.html', class: 'nav-item is-brand' do
-        = image_tag 'logo.png', alt: 'Bakery'
-      = link_to 'Review & Ratings', '/index.html', class: 'nav-item'
-      = link_to 'Health Articles', '/index.html', class: 'nav-item'
-      = link_to 'Review Your Doctor', '/index.html', class: 'nav-item'
+        = image_tag 'caredashlogo.png', alt: 'Bakery'
+
 
 
 
@@ -13,6 +11,17 @@
       span
       span
       span
+
+    #nav-menu.nav-right.nav-menu
+      #dropdown
+        = link_to 'Review & Ratings', '/index.html', class: 'nav-item'
+        #dropdown_content
+          = link_to 'Review & Ratings', '/index.html', class: 'nav-item'
+          = link_to 'Review & Ratings', '/index.html', class: 'nav-item'
+
+      = link_to 'Health Articles', '/index.html', class: 'nav-item'
+      = link_to 'Review Your Doctor', '/index.html', class: 'nav-item'
+
 
 
 hr.is-marginless
