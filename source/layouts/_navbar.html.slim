@@ -12,12 +12,13 @@
       span
 
     #nav-menu.nav-right.nav-menu
-      #dropdown
+      .dropdown
         = link_to 'Review & Ratings', '/index.html', class: 'nav-item'
-        #dropdown_content
-          = link_to 'Primary Care', '/index.html', class: 'nav-item'
-          = link_to 'Dentist', '/index.html', class: 'nav-item'
-          = link_to 'OBGYN', '/index.html', class: 'nav-item'
+        .dropdown_content
+          .dropdown_block
+            = link_to 'Primary Care', '/index.html', class: 'nav-item'
+            = link_to 'Dentist', '/index.html', class: 'nav-item'
+            = link_to 'OBGYN', '/index.html', class: 'nav-item'
 
       = link_to 'Health Articles', '/index.html', class: 'nav-item'
       = link_to 'Review Your Doctor', '/index.html', class: 'nav-item'

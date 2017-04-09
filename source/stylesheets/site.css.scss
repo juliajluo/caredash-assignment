@@ -63,23 +63,36 @@ footer a {
 
 //custom
 
-#dropdown_content {
-  box-shadow: 0 0 8px #777;
+.dropdown_content {
   display: none;
-  left: 0;
+  // left: 0;
   position: relative;
   // top: 100%;
   z-index: 1;
 }
 
-#dropdown_content.is-active {
-  display: block;
-  // z-index: 3;
+// .dropdown_content.is-active {
+//   display: block;
+//   // z-index: 3;
+//
+// }
 
+.dropdown{
+  padding-top: 10px;
 }
 
-#dropdown{
-  padding-top: 10px;
+.dropdown:hover .dropdown_content {
+    display: block;
+    z-index:1000;
+
+    // position: absolute;
+}
+.dropdown:hover .dropdown_block{
+    display: block;
+    z-index: 1000;
+    position: absolute;
+    background-color: white;
+
 }
 
 .footercustom{
